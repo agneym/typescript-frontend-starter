@@ -48,11 +48,7 @@ module.exports = {
       }
     }),
     new UglifyJSPlugin({
-      test: /\.ts$/,
-      warnings: false,
-      compress: {
-        drop_console: true
-      }
+      test: /\.ts$/
     }),
     new webpack.optimize.AggressiveMergingPlugin(),
     new workboxPlugin({
